@@ -1,0 +1,17 @@
+.carousel {
+    top: 20px;
+}
+
+.carousel-item {
+    position: relative;
+    max-height: 650px;
+    padding-top: 56.25%;
+}
+
+.carousel-item img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
