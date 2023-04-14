@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block content %}
+
+<div class="row featurette">
+    <div class="col-md-7">
+      <h2 class="featurette-heading fw-normal lh-1">Прекрасные преподаватели</h2>
+      <p class="lead">Каждый проходит тщательный и серьёзный отбор</p>
+    </div>
+    <div class="col-md-5">
+      <img src="{% static 'other/img/teacher.jpg' %}" width="500" height="500" class="d-block rounded" alt="Фото преподавателя">
+    </div>
+</div>
+
+<hr class="featurette-divider">
+
+<div class="row featurette">
+    <div class="col-md-7 order-md-2">
+      <h2 class="featurette-heading fw-normal lh-1">Множество выпускников</h2>
+      <p class="lead">которые нашли применение своим знаниям</p>
+    </div>
+    <div class="col-md-5 order-md-1">
+      <img src="{% static 'other/img/student.jpg' %}" width="500" height="500" class="d-block rounded" alt="Фото выпускника">
+    </div>
+</div>
+
+<hr class="featurette-divider">
+
+<div class="row featurette">
+    <div class="col-md-7">
+      <h2 class="featurette-heading fw-normal lh-1">Гарантируем</h2>
+      <p class="lead">качественное образование</p>
+    </div>
+    <div class="col-md-5">
+      <img src="{% static 'other/img/cool.jpg' %}" width="500" height="500" class="d-block rounded" alt="Фото смайлика">
+    </div>
+</div>
+
+<hr class="featurette-divider">
+{% endblock %}
