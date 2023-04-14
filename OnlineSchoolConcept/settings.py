@@ -19,8 +19,13 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+
+    'tinymce',
+    'grappelli',
+
     'homepage.apps.HomepageConfig',
     'about.apps.AboutConfig',
+    'courses.apps.CoursesConfig',
 ]
 
 MIDDLEWARE = [
