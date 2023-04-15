@@ -2,7 +2,7 @@ from django.db import models
 from tinymce.models import HTMLField
 
 
-class Course(models.Model):
+class Tutor(models.Model):
 
     title = models.CharField(
         'заголовок',
@@ -11,12 +11,12 @@ class Course(models.Model):
 
     text = HTMLField(
         verbose_name='описание',
-        help_text='введите ваше описание курса',
+        help_text='введите ваше описание преподавателя',
     )
 
     def __str__(self):
         return self.title
 
     class Meta:
-        verbose_name = 'курс'
-        verbose_name_plural = 'курсы'
+        verbose_name = 'преподаватель'
+        verbose_name_plural = 'преподаватели'
