@@ -1,0 +1,7 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    {% for tutor in tutors %}
+        {% include 'includes/tutor_card.html' with tutor=tutor %}
+    {% endfor %}
+{% endblock content %}

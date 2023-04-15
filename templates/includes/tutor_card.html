@@ -1,0 +1,8 @@
+{% load static %}
+
+<div class="col">
+    <h3>{{ tutor.title }}</h3>
+    {{ tutor.img_tmb }}
+    <p>{{ tutor.text | safe |truncatechars_html:40 }}</p>
+    <p><a class="btn btn-secondary" href="">Подробнее</a></p>
+</div>

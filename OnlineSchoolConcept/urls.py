@@ -10,9 +10,5 @@ urlpatterns = [
     path('', include('homepage.urls'), name='homepage'),
     path('about/', include('about.urls'), name='about'),
     path('courses/', include('courses.urls'), name='courses'),
+    path('tutors/', include('tutors.urls'), name='tutors'),
 ]
-
-"""urlpatterns += static(
-    settings.MEDIA_URL,
-    document_root=settings.MEDIA_ROOT
-)"""

@@ -26,6 +26,7 @@ INSTALLED_APPS = [
     'homepage.apps.HomepageConfig',
     'about.apps.AboutConfig',
     'courses.apps.CoursesConfig',
+    'tutors.apps.TutorsConfig',
 ]
 
 MIDDLEWARE = [
