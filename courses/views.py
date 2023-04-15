@@ -1,5 +1,14 @@
 from django.shortcuts import render
+from courses.models import Course
 
 
 def list(request):
-    return render(request, 'courses/list.html')
+    template = 'courses/list.html'
+
+    courses = Course.objects.all()
+
+    context = {
+        'courses': courses,
+    }
+
+    return render(request, template, context)

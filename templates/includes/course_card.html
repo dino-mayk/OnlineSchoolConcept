@@ -1,0 +1,8 @@
+{% load static %}
+
+<div class="col">
+    <h3>{{ course.title }}</h3>
+    {{ course.img_tmb }}
+    <p>{{ course.text | safe |truncatechars_html:40 }}</p>
+    <p><a class="btn btn-secondary" href="">Подробнее</a></p>
+</div>
